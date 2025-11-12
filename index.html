@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accred Alts ? AIFs Explained</title>
+  <meta name="description" content="Animated vertical 9:16 explainer for Alternative Investment Funds (AIFs) by Accred Alts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="brand">
+      <div class="brand-mark">Accred <span>Alts</span></div>
+    </header>
+
+    <main class="stage-wrapper">
+      <div id="stage" class="stage" aria-label="Animated explainer video" role="region">
+        <!-- Scene layers -->
+        <div id="scene-intro" class="scene scene-intro hidden" aria-hidden="true">
+          <div class="bg-gradient"></div>
+          <svg class="chart" viewBox="0 0 1080 1920" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <polyline class="chart-line chart-line-1" points="100,1600 300,1400 400,1450 600,1200 800,1300 950,900"/>
+            <polyline class="chart-line chart-line-2" points="100,1500 250,1350 500,1250 700,1100 900,1000 1000,800"/>
+            <g class="coins" aria-hidden="true">
+              <circle class="coin" cx="220" cy="1700" r="28" />
+              <circle class="coin" cx="260" cy="1680" r="28" />
+              <circle class="coin" cx="300" cy="1660" r="28" />
+            </g>
+            <g class="network" aria-hidden="true">
+              <circle class="node" cx="760" cy="600" r="10"/>
+              <circle class="node" cx="880" cy="680" r="10"/>
+              <circle class="node" cx="940" cy="560" r="10"/>
+              <line class="edge" x1="760" y1="600" x2="880" y2="680"/>
+              <line class="edge" x1="880" y1="680" x2="940" y2="560"/>
+              <line class="edge" x1="760" y1="600" x2="940" y2="560"/>
+            </g>
+          </svg>
+          <div class="intro-copy">
+            <h1>Discover smarter ways to grow your wealth</h1>
+            <p>Beyond traditional investments.</p>
+          </div>
+        </div>
+
+        <div id="scene-definition" class="scene scene-definition hidden" aria-hidden="true">
+          <div class="info-card">
+            <div class="icon-pool" aria-hidden="true">
+              <div class="pool-circle"></div>
+              <div class="pool-circle"></div>
+              <div class="pool-circle"></div>
+            </div>
+            <h2>What are Alternative Investment Funds (AIFs)?</h2>
+            <p>Privately pooled investment vehicles offering access to exclusive, high-growth opportunities across global markets.</p>
+          </div>
+        </div>
+
+        <div id="scene-categories" class="scene scene-categories hidden" aria-hidden="true">
+          <div class="categories">
+            <section class="category-card cat-1">
+              <h3>Category I</h3>
+              <ul>
+                <li>Venture Capital</li>
+                <li>SME</li>
+                <li>Social Impact Funds</li>
+              </ul>
+            </section>
+            <section class="category-card cat-2">
+              <h3>Category II</h3>
+              <ul>
+                <li>Private Equity</li>
+                <li>Debt Funds</li>
+              </ul>
+            </section>
+            <section class="category-card cat-3">
+              <h3>Category III</h3>
+              <ul>
+                <li>Hedge Funds</li>
+                <li>Advanced Strategies</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+
+        <div id="scene-advantages" class="scene scene-advantages hidden" aria-hidden="true">
+          <div class="advantages">
+            <div class="adv-item">
+              <div class="adv-icon adv-diversify"></div>
+              <div class="adv-text">
+                <h3>Diversification</h3>
+                <p>Broaden exposure beyond public markets.</p>
+              </div>
+            </div>
+            <div class="adv-item">
+              <div class="adv-icon adv-expert"></div>
+              <div class="adv-text">
+                <h3>Expert Management</h3>
+                <p>Professionally researched strategies and oversight.</p>
+              </div>
+            </div>
+            <div class="adv-item">
+              <div class="adv-icon adv-intelligent"></div>
+              <div class="adv-text">
+                <h3>Intelligent Wealth Creation</h3>
+                <p>Structured access to exclusive opportunities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="captions" class="captions" aria-live="polite" aria-atomic="true"></div>
+      </div>
+    </main>
+
+    <footer class="controls">
+      <button id="btn-play" class="btn primary">Play</button>
+      <button id="btn-replay" class="btn">Replay</button>
+      <button id="btn-mute" class="btn">Mute</button>
+    </footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
